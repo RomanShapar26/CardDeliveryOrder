@@ -87,34 +87,4 @@ public class CardDeliveryOrderTest {
         $(withText("Забронировать")).click();
         $("[data-test-id='name'].input_invalid .input__sub").shouldHave(Condition.exactText("Поле обязательно для заполнения"));
     }
-
-//    @Test
-//    public void shouldNoCity(){
-//        Configuration.timeout = 15000;
-//        $("[placeholder='Город']").setValue("");
-//        $(".menu-item__control").click();
-//        $("[name='name']").setValue("Иванов Иван");
-//        $("[name='phone']").setValue("+77412369852");
-//        $(".checkbox__box").click();
-//        $("[placeholder='Город']").setValue("");
-//        $(withText("Забронировать")).click();
-//        $("[data-test-id='Город'].input_invalid .input__sub").shouldHave(Condition.exactText("Доставка в выбранный город недоступна"));
-//    }
-//    @Test
-//    public void shouldShowErrorNoSymbol() {
-//        open("http://localhost:9999/");
-//        Configuration.timeout = 15000;
-//        $("[placeholder='Город']").setValue("Krasnodar");
-//        $(".menu-item__control").click();
-//        $("[data-test-id=name] input").setValue("");
-//        $("[data-test-id=phone] input").setValue("");
-//        $(".checkbox__box").click();
-//        $(withText("Забронировать")).click();
-//        $("[data-test-id=''].input_invalid .input__sub").shouldHave(Condition.exactText("Поля обязательные для заполнения"));
-//    }
-
-
-
-
-
 }
